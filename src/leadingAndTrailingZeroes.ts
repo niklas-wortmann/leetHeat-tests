@@ -10,18 +10,18 @@ export function removeLeadingAndTrailingZeroes(num: string): string {
 
 
 if (import.meta.vitest) {
-    const { it, expect, describe} = import.meta.vitest
+    const { it, expect, describe } = import.meta.vitest
 
     describe("removeLeadingAndTrailingZeroes", () => {
         it('should work', () => {
-            expect(removeLeadingAndTrailingZeroes("230.000"), "230")
-            expect(removeLeadingAndTrailingZeroes("00402"), "402")
-            expect(removeLeadingAndTrailingZeroes("03.1400"), "3.14")
-            expect(removeLeadingAndTrailingZeroes("30"), "30")
-            expect(removeLeadingAndTrailingZeroes("00"), "00")
-            expect(removeLeadingAndTrailingZeroes("0.000000"), "0")
-            expect(removeLeadingAndTrailingZeroes("00.0001"),  "0.0001")
-            expect(removeLeadingAndTrailingZeroes("10000"), "10000")
+            expect(removeLeadingAndTrailingZeroes("230.000")).toEqual("230")
+            expect(removeLeadingAndTrailingZeroes("00402")).toEqual("402")
+            expect(removeLeadingAndTrailingZeroes("03.1400")).toEqual("3.14")
+            expect(removeLeadingAndTrailingZeroes("30")).toEqual("30")
+            expect(removeLeadingAndTrailingZeroes("00")).toEqual("0")
+            expect(removeLeadingAndTrailingZeroes("0.000000")).toEqual("0")
+            expect(removeLeadingAndTrailingZeroes("00.0001")).toEqual( "0.0001")
+            expect(removeLeadingAndTrailingZeroes("10000")).toEqual("10000")
         });
     })
 }

@@ -1,5 +1,11 @@
 /**
- * Create a function that moves all capital letters to the front of a word.
+ * Create a function that moves all capital letters to the front of a
+ * word maintaining the same order within the casing set.
+ *
+ * ex.
+ *  (AaBbCc -> ABCabc)
+ *  (cCbBaA -> CBAcba)
+ *
  * @param toSort
  */
 export function capToFront(toSort: string) {
